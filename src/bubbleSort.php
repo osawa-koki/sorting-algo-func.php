@@ -3,8 +3,7 @@
 /**
  * Bubble sort algorithm
  */
-function bubbleSort($arr)
-{
+$bubbleSort = function ($arr) {
     $n = count($arr);
     for ($i = 0; $i < $n; $i++) {
         for ($j = 0; $j < $n - $i - 1; $j++) {
@@ -16,4 +15,6 @@ function bubbleSort($arr)
         }
     }
     return $arr;
-}
+};
+
+$GLOBALS['bubbleSort'] = $bubbleSort;
