@@ -5,6 +5,7 @@ use PHPUnit\Framework\TestCase;
 require_once './src/bubbleSort.php';
 require_once './src/selectionSort.php';
 require_once './src/insertionSort.php';
+require_once './src/mergeSort.php';
 
 class SortTest extends TestCase
 {
@@ -22,7 +23,8 @@ class SortTest extends TestCase
         $sortingFunctionNames = [
             'bubbleSort',
             'selectionSort',
-            'insertionSort'
+            'insertionSort',
+            'mergeSort'
         ];
 
         foreach ($sortingFunctionNames as $sortingFunctionName) {
