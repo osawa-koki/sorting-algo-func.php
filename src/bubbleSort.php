@@ -1,7 +1,5 @@
 <?php
 
-// Doc
-
 /**
  * Bubble sort algorithm
  */
