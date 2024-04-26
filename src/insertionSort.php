@@ -1,6 +1,6 @@
 <?php
 
-function insertionSort($arr)
+$insertionSort = function ($arr)
 {
     $n = count($arr);
     for ($i = 1; $i < $n; $i++) {
@@ -13,4 +13,6 @@ function insertionSort($arr)
         $arr[$j + 1] = $key;
     }
     return $arr;
-}
+};
+
+$GLOBALS['insertionSort'] = $insertionSort;

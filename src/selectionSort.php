@@ -3,7 +3,7 @@
 /**
  * Selection sort algorithm
  */
-function selectionSort($ary)
+$selectionSort = function ($ary)
 {
     for ($i = 0; $i < count($ary) - 1; $i++) {
         $minIndex = $i;
@@ -19,4 +19,6 @@ function selectionSort($ary)
         }
     }
     return $ary;
-}
+};
+
+$GLOBALS['selectionSort'] = $selectionSort;
