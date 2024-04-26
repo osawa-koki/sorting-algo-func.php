@@ -2,6 +2,11 @@
   "name": "osawa-koki/sorting-algo-func-php",
   "description": "📊📊📊 PHPで整列アルゴリズムを実装してみる！",
   "license": "Apache-2.0",
+	"config": {
+		"platform": {
+			"php": "8.2.12"
+		}
+	},
   "scripts": {
     "start": [
       "php ./src/main.php"

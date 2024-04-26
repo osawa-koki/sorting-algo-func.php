@@ -20,3 +20,10 @@ composer run-script start
 # ShuffledArray: 0, 3, 6, 2, 5, 8, 4, 7, 9, 1
 # HeapSort     : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 ```
+
+Dockerで実行する場合は以下のコマンドを実行してください。  
+
+```shell
+docker build -t sorting-algo-func-php .
+docker run -it --rm --name sorting-algo-func-php sorting-algo-func-php
+```
