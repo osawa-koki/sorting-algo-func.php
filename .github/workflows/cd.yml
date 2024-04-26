@@ -1,9 +1,12 @@
-name: ci
+name: cd
 
-on: [ push ]
+on:
+  workflow_dispatch:
+  push:
+    tags: [ 'v-*' ]
 
 jobs:
-  ci:
+  cd:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4
@@ -15,13 +18,13 @@ jobs:
       run: composer validate --strict
     - name: Cache Composer packages
       id: composer-cache
-      uses: actions/cache@v4
+      uses: actions/cache@v3
       with:
         path: vendor
         key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
         restore-keys: |
           ${{ runner.os }}-php-
     - name: Install dependencies
-      run: composer install --no-progress
-    - name: Run test suite
-      run: composer run-script test
+      run: composer install --no-progress --no-dev
+    - name: Run program
+      run: composer run-script start
