@@ -1,5 +1,13 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,linux,visualstudiocode,vim
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,linux,visualstudiocode,vim
+# Created by https://www.toptal.com/developers/gitignore/api/vim,linux,macos,windows,visualstudiocode,phpunit,composer
+# Edit at https://www.toptal.com/developers/gitignore?templates=vim,linux,macos,windows,visualstudiocode,phpunit,composer
+
+### Composer ###
+composer.phar
+/vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
 
 ### Linux ###
 *~
@@ -48,6 +56,21 @@ Temporary Items
 ### macOS Patch ###
 # iCloud generated files
 *.icloud
+
+### PHPUnit ###
+# Covers PHPUnit
+# Reference: https://phpunit.de/
+
+# Generated files
+.phpunit.result.cache
+.phpunit.cache
+
+# PHPUnit
+/app/phpunit.xml
+/phpunit.xml
+
+# Build data
+/build/
 
 ### Vim ###
 # Swap
@@ -114,4 +137,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,visualstudiocode,vim
+# End of https://www.toptal.com/developers/gitignore/api/vim,linux,macos,windows,visualstudiocode,phpunit,composer
