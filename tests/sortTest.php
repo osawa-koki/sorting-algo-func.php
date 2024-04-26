@@ -3,6 +3,7 @@
 use PHPUnit\Framework\TestCase;
 
 require_once './src/bubbleSort.php';
+require_once './src/selectionSort.php';
 
 class SortTest extends TestCase
 {
@@ -14,6 +15,15 @@ class SortTest extends TestCase
   }
 
   public function testBubbleSort()
+  {
+    $shuffledArray = $this->getTestArray();
+    $sortedArray = bubbleSort($shuffledArray);
+    for ($i = 1; $i < 9; $i++) {
+      $this->assertGreaterThan($sortedArray[$i - 1], $sortedArray[$i]);
+    }
+  }
+
+  public function testSelectionSort()
   {
     $shuffledArray = $this->getTestArray();
     $sortedArray = bubbleSort($shuffledArray);
