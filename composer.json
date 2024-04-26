@@ -6,6 +6,12 @@
     "start": [
       "php ./src/main.php"
     ],
+    "lint": [
+      "php-cs-fixer check ./src/"
+    ],
+    "lint:fix": [
+      "php-cs-fixer fix ./src/"
+    ],
     "test": [
       "phpunit"
     ]
