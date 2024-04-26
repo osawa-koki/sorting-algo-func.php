@@ -1,7 +1,6 @@
 <?php
 
-$insertionSort = function ($arr)
-{
+$insertionSort = function ($arr) {
     $n = count($arr);
     for ($i = 1; $i < $n; $i++) {
         $key = $arr[$i];
