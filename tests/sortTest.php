@@ -6,6 +6,7 @@ require_once './src/bubbleSort.php';
 require_once './src/selectionSort.php';
 require_once './src/insertionSort.php';
 require_once './src/mergeSort.php';
+require_once './src/quickSort.php';
 
 class SortTest extends TestCase
 {
@@ -24,7 +25,8 @@ class SortTest extends TestCase
             'bubbleSort',
             'selectionSort',
             'insertionSort',
-            'mergeSort'
+            'mergeSort',
+            'quickSort'
         ];
 
         foreach ($sortingFunctionNames as $sortingFunctionName) {
