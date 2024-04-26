@@ -1,8 +1,5 @@
 <?php
 
-/**
- * Selection sort algorithm
- */
 $selectionSort = function ($ary) {
     for ($i = 0; $i < count($ary) - 1; $i++) {
         $minIndex = $i;
