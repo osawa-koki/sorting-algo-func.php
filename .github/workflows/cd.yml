@@ -1,9 +1,12 @@
-name: ci
+name: cd
 
-on: [ push ]
+on:
+  workflow_dispatch:
+  push:
+    tags: [ 'v-*' ]
 
 jobs:
-  ci:
+  cd:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4
@@ -22,6 +25,6 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-php-
     - name: Install dependencies
-      run: composer install --no-progress
-    - name: Run test suite
-      run: composer run-script test
+      run: composer install --no-progress --no-dev
+    - name: Run program
+      run: composer run-script start
