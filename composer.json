@@ -7,10 +7,12 @@
       "php ./src/main.php"
     ],
     "lint": [
-      "php-cs-fixer check ./src/"
+      "php-cs-fixer check ./src/",
+      "php-cs-fixer check ./tests/"
     ],
     "lint:fix": [
-      "php-cs-fixer fix ./src/"
+      "php-cs-fixer fix ./src/",
+      "php-cs-fixer fix ./tests/"
     ],
     "test": [
       "phpunit"
