@@ -5,6 +5,7 @@ require_once 'selectionSort.php';
 require_once 'insertionSort.php';
 require_once 'mergeSort.php';
 require_once 'quickSort.php';
+require_once 'heapSort.php';
 
 $array = range(0, 9);
 
@@ -27,3 +28,7 @@ echo 'MergeSort    : '. join(', ', $mergeSort($array)) . PHP_EOL;
 shuffle($array);
 echo 'ShuffledArray: '. join(', ', $array) . PHP_EOL;
 echo 'QuickSort    : '. join(', ', $quickSort($array)) . PHP_EOL;
+
+shuffle($array);
+echo 'ShuffledArray: '. join(', ', $array) . PHP_EOL;
+echo 'HeapSort     : '. join(', ', $heapSort($array)) . PHP_EOL;
