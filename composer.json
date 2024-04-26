@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "start": [
+      "php ./src/main.php"
+    ]
+  }
+}
